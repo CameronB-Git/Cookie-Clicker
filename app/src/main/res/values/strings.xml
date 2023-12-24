@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Cookie Clicker</string>
+    <string name="Helping_Hand">Helping Hand</string>
+    <string name="upgrade_cost">Cost: %d</string>
+    <string name="Num_Of_Cookies">0</string>
+    <string name="Cookie_Content_Desc">Cookie Button</string>
+    <string name="Grandma">Grandma</string>
+    <string name="Farm">Farm</string>
+
+    <plurals name="score">
+        <item quantity="one">%d cookie</item>
+        <item quantity="other">%d cookies</item>
+    </plurals>
+
+</resources>
