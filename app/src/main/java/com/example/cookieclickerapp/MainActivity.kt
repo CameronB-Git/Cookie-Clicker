@@ -90,13 +90,6 @@ class MainActivity : AppCompatActivity() {
             scoreText.text = resources.getQuantityString(R.plurals.score, score)
         }
 
-        var giveHundred = findViewById<Button>(R.id.giveHundredCookies)
-
-        giveHundred.setOnClickListener {
-            score += 100
-            scoreText.text = score.toString()
-        }
-
 
         // Loop to Increase Cookie Counter
         Handler(Looper.getMainLooper()).postDelayed(object: Runnable{
