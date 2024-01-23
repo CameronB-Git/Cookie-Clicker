@@ -20,88 +20,46 @@
 
     <Button
         android:id="@+id/helpingHandButton"
-        android:layout_width="129dp"
-        android:layout_height="67dp"
-        android:layout_marginBottom="644dp"
+        android:layout_width="160dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="544dp"
         android:text="@string/Helping_Hand"
         android:textColor="@color/purple_200"
         android:textColorHighlight="@color/purple_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintHorizontal_bias="0.063"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cookieImage"
         app:layout_constraintVertical_bias="0.075" />
 
     <TextView
-        android:id="@+id/handsNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:layout_marginBottom="624dp"
-        android:text="0"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.322"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/helpingHandButton"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
         android:id="@+id/handsCost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:layout_marginBottom="620dp"
         android:text="@string/upgrade_cost"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/helpingHandButton"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/grandmaButton"
-        android:layout_width="129dp"
-        android:layout_height="67dp"
-        android:text="@string/Grandma"
-        android:textColor="@color/purple_200"
-        android:textColorHighlight="@color/purple_200"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.943"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03" />
+        app:layout_constraintEnd_toEndOf="@+id/helpingHandButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/helpingHandButton"
+        app:layout_constraintTop_toBottomOf="@+id/helpingHandButton"
+        app:layout_constraintVertical_bias="0.007" />
 
     <TextView
-        android:id="@+id/grandmaNumber"
+        android:id="@+id/farmNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
         android:text="0"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/grandmaButton"
-        app:layout_constraintHorizontal_bias="0.942"
-        app:layout_constraintStart_toStartOf="@+id/grandmaButton"
-        app:layout_constraintTop_toBottomOf="@+id/grandmaButton"
+        app:layout_constraintEnd_toEndOf="@+id/farmButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/farmButton"
+        app:layout_constraintTop_toBottomOf="@+id/farmButton"
         app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/farmButton"
-        android:layout_width="129dp"
-        android:layout_height="67dp"
-        android:text="@string/Farm"
-        android:textColor="@color/purple_200"
-        android:textColorHighlight="@color/purple_200"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.292" />
 
     <TextView
         android:id="@+id/farmCost"
@@ -117,26 +75,64 @@
         app:layout_constraintTop_toBottomOf="@+id/farmButton"
         app:layout_constraintVertical_bias="0.0" />
 
+    <Button
+        android:id="@+id/farmButton"
+        android:layout_width="160dp"
+        android:layout_height="64dp"
+        android:text="@string/Farm"
+        android:textColor="@color/purple_200"
+        android:textColorHighlight="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376" />
+
     <TextView
-        android:id="@+id/farmNumber"
+        android:id="@+id/handsNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="10dp"
         android:text="0"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/farmButton"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/farmButton"
-        app:layout_constraintTop_toBottomOf="@+id/farmButton"
+        app:layout_constraintEnd_toEndOf="@+id/helpingHandButton"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="@+id/helpingHandButton"
+        app:layout_constraintTop_toBottomOf="@+id/helpingHandButton"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <Button
+        android:id="@+id/grandmaButton"
+        android:layout_width="160dp"
+        android:layout_height="64dp"
+        android:text="@string/Grandma"
+        android:textColor="@color/purple_200"
+        android:textColorHighlight="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.184" />
+
+    <TextView
+        android:id="@+id/grandmaNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/grandmaButton"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="@+id/grandmaButton"
+        app:layout_constraintTop_toBottomOf="@+id/grandmaButton"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/grandmaCost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:text="@string/upgrade_cost"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="score">
+        <item quantity="one">@string/score_singular</item>
+        <item quantity="other">@string/score_plural</item>
+    </plurals>
+</resources>

@@ -55,7 +55,7 @@ import android.widget.TextView
 
         // Find Counter + Update Cookie Amount
         val scoreText = findViewById<TextView>(R.id.counterUpgrades)
-        scoreText.text = score.toString()
+        scoreText.text = resources.getQuantityString(R.plurals.score, score, score)
 
         // Find Cookie Page Button
         val cookiePageButton = findViewById<Button>(R.id.cookiePage)
@@ -117,7 +117,7 @@ import android.widget.TextView
             handsNumberLabel.text = handsNumber.toString() // Show new num of hands on screen
 
             score -= handsCost // Decrease Num of Cookies
-            scoreText.text = score.toString() // Show new num of cookies on screen
+            scoreText.text = resources.getQuantityString(R.plurals.score, score, score) // Show new num of cookies on screen
 
             handsCost += 25 // Increase Cost of Hand
             handsCostLabel.text =
@@ -135,7 +135,7 @@ import android.widget.TextView
             grandmaNumberLabel.text = grandmaNumber.toString() // Show new num of grandmas on screen
 
             score -= grandmaCost // Decrease Num of Cookies
-            scoreText.text = score.toString() // Show new num of cookies on screen
+            scoreText.text = resources.getQuantityString(R.plurals.score, score, score) // Show new num of cookies on screen
 
             grandmaCost += 150 // Increase Cost of Grandma
             grandmaCostLabel.text =
@@ -153,7 +153,7 @@ import android.widget.TextView
             farmNumberLabel.text = farmNumber.toString() // Show new num of farms on screen
 
             score -= farmCost // Decrease Num of Cookies
-            scoreText.text = score.toString() // Show new num of cookies on screen
+            scoreText.text = resources.getQuantityString(R.plurals.score, score, score) // Show new num of cookies on screen
 
             farmCost += 250 // Increase Cost of Farm
             farmCostLabel.text = getString(R.string.upgrade_cost, farmCost)
@@ -167,7 +167,7 @@ import android.widget.TextView
         Handler(Looper.getMainLooper()).postDelayed(object: Runnable{
             override fun run(){
                 score += autoClickerPower
-                scoreText.text = score.toString()
+                scoreText.text = resources.getQuantityString(R.plurals.score, score, score)
 
                 // Enables/Disables Upgrade Buttons
                 handsButton.isEnabled = score >= handsCost

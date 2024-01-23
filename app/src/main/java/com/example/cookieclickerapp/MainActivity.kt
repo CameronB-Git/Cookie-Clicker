@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         val scoreText = findViewById<TextView>(R.id.counter)
 
         // Update Cookie Counter
-        scoreText.text = score.toString()
+        scoreText.text = resources.getQuantityString(R.plurals.score, score, score)
 
 
         // Finding Upgrades Page Button
@@ -87,7 +87,7 @@ class MainActivity : AppCompatActivity() {
         // On Cookie Click - Increases Cookie Counter
         clickerButton.setOnClickListener {
             score++
-            scoreText.text = resources.getQuantityString(R.plurals.score, score)
+            scoreText.text = resources.getQuantityString(R.plurals.score, score, score)
         }
 
 
@@ -95,7 +95,7 @@ class MainActivity : AppCompatActivity() {
         Handler(Looper.getMainLooper()).postDelayed(object: Runnable{
             override fun run(){
                 score += autoClickerPower
-                scoreText.text = score.toString()
+                scoreText.text = resources.getQuantityString(R.plurals.score, score, score)
 
                 Handler(Looper.getMainLooper()).postDelayed(this, 1000)
             }
